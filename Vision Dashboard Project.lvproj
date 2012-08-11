@@ -12,7 +12,6 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Support" Type="Folder">
-			<Item Name="Parse Digital Module.vi" Type="VI" URL="../Parse Digital Module.vi"/>
 			<Item Name="Update Battery Indicator.vi" Type="VI" URL="../Update Battery Indicator.vi"/>
 			<Item Name="Save DB Images.vi" Type="VI" URL="../Save DB Images.vi"/>
 			<Item Name="Receive DS Packet.vi" Type="VI" URL="../Receive DS Packet.vi"/>
@@ -23,10 +22,19 @@
 		<Item Name="TypeDefs" Type="Folder">
 			<Item Name="DStoPCPacketTypeDef.ctl" Type="VI" URL="../DStoPCPacketTypeDef.ctl"/>
 		</Item>
+		<Item Name="Utilities" Type="Folder">
+			<Item Name="checkDeadband.vi" Type="VI" URL="../checkDeadband.vi"/>
+			<Item Name="deadband.vi" Type="VI" URL="../deadband.vi"/>
+		</Item>
+		<Item Name="Debugging subVIs" Type="Folder">
+			<Item Name="drivetrain.vi" Type="VI" URL="../Debugging subVIs/drivetrain.vi"/>
+		</Item>
 		<Item Name="Dashboard Main.vi" Type="VI" URL="../Dashboard Main.vi"/>
 		<Item Name="Build Simple Skeleton Data.vi" Type="VI" URL="../Build Simple Skeleton Data.vi"/>
 		<Item Name="Build Camera IP.vi" Type="VI" URL="../Build Camera IP.vi"/>
 		<Item Name="Draw Simple Skeleton Picture.vi" Type="VI" URL="../Draw Simple Skeleton Picture.vi"/>
+		<Item Name="Party.vi" Type="VI" URL="../Party.vi"/>
+		<Item Name="Parse Digital Module.vi" Type="VI" URL="../../../Documents/LabVIEW Data/2012 Dashboard Project/Parse Digital Module.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="IMAQ Create" Type="VI" URL="/&lt;vilib&gt;/vision/Basics.llb/IMAQ Create"/>
