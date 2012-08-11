@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2012 Rebound Rumble FRC Dashboard for FRC 2337
 ================================
 
@@ -15,3 +16,9 @@ To Do:
 --------------------------------
 
 *	Test with driver practice (testing accessibility, how well vision tracking works)
+=======
+offseasonDebugDashboard
+=======================
+
+Revamp of the 2012 Dashboard to include functions for debugging.
+>>>>>>> 40c82cd989f733abf91498276b5dde04ad80c43c
