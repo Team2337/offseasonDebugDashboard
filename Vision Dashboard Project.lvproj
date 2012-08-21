@@ -11,6 +11,12 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Debugging" Type="Folder">
+			<Item Name="drivetrain.vi" Type="VI" URL="../Debugging subVIs/drivetrain.vi"/>
+			<Item Name="risingedge.vi" Type="VI" URL="../risingedge.vi"/>
+			<Item Name="shifter.vi" Type="VI" URL="../Debugging subVIs/shifter.vi"/>
+			<Item Name="toggle.vi" Type="VI" URL="../toggle.vi"/>
+		</Item>
 		<Item Name="Support" Type="Folder">
 			<Item Name="Update Battery Indicator.vi" Type="VI" URL="../Update Battery Indicator.vi"/>
 			<Item Name="Save DB Images.vi" Type="VI" URL="../Save DB Images.vi"/>
@@ -26,14 +32,22 @@
 			<Item Name="checkDeadband.vi" Type="VI" URL="../checkDeadband.vi"/>
 			<Item Name="deadband.vi" Type="VI" URL="../deadband.vi"/>
 		</Item>
-		<Item Name="Debugging subVIs" Type="Folder">
-			<Item Name="drivetrain.vi" Type="VI" URL="../Debugging subVIs/drivetrain.vi"/>
+		<Item Name="Vision" Type="Folder">
+			<Item Name="Sorted Particle Report.vi" Type="VI" URL="../Vision/Sorted Particle Report.vi"/>
+			<Item Name="Aspect Ratio Score.vi" Type="VI" URL="../Vision/Aspect Ratio Score.vi"/>
+			<Item Name="Rectangularity Score.vi" Type="VI" URL="../Vision/Rectangularity Score.vi"/>
+			<Item Name="Normalized Range Compare.vi" Type="VI" URL="../Vision/Normalized Range Compare.vi"/>
+			<Item Name="VisionData.vi" Type="VI" URL="../Vision/VisionData.vi"/>
+			<Item Name="Compute Distance.vi" Type="VI" URL="../Vision/Compute Distance.vi"/>
+			<Item Name="Draw Filled Rect.vi" Type="VI" URL="../Vision/Draw Filled Rect.vi"/>
+			<Item Name="Score Particles.vi" Type="VI" URL="../Vision/Score Particles.vi"/>
+			<Item Name="SelectorTallestTarget.vi" Type="VI" URL="../Vision/SelectorTallestTarget.vi"/>
 		</Item>
 		<Item Name="Dashboard Main.vi" Type="VI" URL="../Dashboard Main.vi"/>
 		<Item Name="Build Simple Skeleton Data.vi" Type="VI" URL="../Build Simple Skeleton Data.vi"/>
 		<Item Name="Build Camera IP.vi" Type="VI" URL="../Build Camera IP.vi"/>
 		<Item Name="Draw Simple Skeleton Picture.vi" Type="VI" URL="../Draw Simple Skeleton Picture.vi"/>
-		<Item Name="Party.vi" Type="VI" URL="../Party.vi"/>
+		<Item Name="debugMain.vi" Type="VI" URL="../Debugging subVIs/debugMain.vi"/>
 		<Item Name="Parse Digital Module.vi" Type="VI" URL="../../../Documents/LabVIEW Data/2012 Dashboard Project/Parse Digital Module.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -85,6 +99,22 @@
 				<Item Name="joystickAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/joystickAcquire.vi"/>
 				<Item Name="keyboardAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/keyboardAcquire.vi"/>
 				<Item Name="mouseAcquire.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/mouseAcquire.vi"/>
+				<Item Name="IMAQ Overlay Rectangle" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Rectangle"/>
+				<Item Name="Color to RGB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/Color to RGB.vi"/>
+				<Item Name="IMAQ Overlay Text" Type="VI" URL="/&lt;vilib&gt;/vision/Overlay.llb/IMAQ Overlay Text"/>
+				<Item Name="Particle Parameters" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/Particle Parameters"/>
+				<Item Name="NI_Vision_Development_Module.lvlib" Type="Library" URL="/&lt;vilib&gt;/vision/NI_Vision_Development_Module.lvlib"/>
+				<Item Name="WPI_CameraSettings Control.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSettings Control.ctl"/>
+				<Item Name="WPI_CameraSettings Operations.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSettings Operations.ctl"/>
+				<Item Name="WPI_CameraManage Camera Settings.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraManage Camera Settings.vi"/>
+				<Item Name="WPI_CameraDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraDevRef.ctl"/>
+				<Item Name="WPI_CameraIssue Get.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraIssue Get.vi"/>
+				<Item Name="WPI_CameraSet Image Appearance Property.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSet Image Appearance Property.vi"/>
+				<Item Name="WPI_CameraSet Enum Appearance Property.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSet Enum Appearance Property.vi"/>
+				<Item Name="WPI_CameraGet Image Size Values.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraGet Image Size Values.vi"/>
+				<Item Name="WPI_CameraSet Image Size.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSet Image Size.vi"/>
+				<Item Name="WPI_CameraSet Numeric Appearance Property.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSet Numeric Appearance Property.vi"/>
+				<Item Name="WPI_CameraSet Image Compression.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Camera/WPI_CameraSet Image Compression.vi"/>
 			</Item>
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
